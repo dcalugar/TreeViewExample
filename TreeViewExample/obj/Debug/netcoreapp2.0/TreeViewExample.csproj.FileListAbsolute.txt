@@ -1,0 +1,10 @@
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\bin\Debug\netcoreapp2.0\TreeViewExample.deps.json
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\bin\Debug\netcoreapp2.0\TreeViewExample.runtimeconfig.json
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\bin\Debug\netcoreapp2.0\TreeViewExample.runtimeconfig.dev.json
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\bin\Debug\netcoreapp2.0\TreeViewExample.dll
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\bin\Debug\netcoreapp2.0\TreeViewExample.pdb
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.csproj.CoreCompileInputs.cache
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.AssemblyInfoInputs.cache
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.AssemblyInfo.cs
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.dll
+c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.pdb

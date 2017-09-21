@@ -1,0 +1,94 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+
+/* Tree view */
+.indent-level-1 {
+    padding: 6px 0px 0px 15px;
+}
+
+.indent-level-2 {
+    padding: 6px 0px 0px 25px;
+}
+
+.indent-level-3 {
+    padding: 6px 0px 0px 35px;
+}
+
+.indent-level-4 {
+    padding: 6px 0px 0px 45px;
+}
+
+.indent-level-5 {
+    padding: 6px 0px 0px 55px;
+}
+
+.tree, .tree ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+    .tree ul {
+        margin-left: 1em;
+        position: relative
+    }
+
+        .tree ul ul {
+            margin-left: .5em
+        }
+
+        .tree ul:before {
+            content: "";
+            display: block;
+            width: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid
+        }
+
+    .tree li {
+        margin: 0;
+        line-height: 2em;
+        color: #369;
+        font-weight: 700;
+        position: relative;
+        transition: all 500s ease-in-out;
+    }
+/* Tree view */

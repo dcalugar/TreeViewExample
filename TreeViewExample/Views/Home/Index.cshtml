@@ -1,0 +1,30 @@
+﻿@model TreeViewExample.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-2">
+        @Html.Partial("_TreeViewPartial", Model.MainNav)
+    </div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Sub nav</h4>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+
+                @Html.Partial("_TreeViewPartial", Model.SubNav)
+            </div>
+            <div class="col-sm-10">
+                here
+            </div>
+        </div>
+    </div>
+</div>
+

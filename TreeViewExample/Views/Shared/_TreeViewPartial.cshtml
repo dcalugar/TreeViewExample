@@ -1,0 +1,89 @@
+﻿@model TreeViewExample.Models.TreeViewPartialViewModel
+
+@{
+    int rootLevel = 0;
+    int parentLevel = 1;
+    string dataText = "";
+}
+
+<ul class="tree" id="tree_@Model.TreeViewId">
+
+    @foreach (var rootNode in Model.MasterTreeNode)
+    {
+
+        @foreach (var node in rootNode)
+        {
+            if (dataText == "")
+            {
+                dataText = node.Parent == null ? "" : node.Parent.Data.DataText;
+            }
+            else if (node.Parent != null && dataText != node.Parent.Data.DataText)
+            {
+                parentLevel++;
+                dataText = node.Parent.Data.DataText;
+            }
+
+            <li class="indent-level-@node.Level @(node.IsRoot ? "" : "hide") @(node.Children.Count > 0 ? "parent" : "") tree-view" data-root="@rootLevel" data-level="@parentLevel">
+                <a href="javascript:;" data-root="@rootLevel" data-level="@parentLevel">
+                    @if (node.Children.Count > 0)
+                    {
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    }
+                    @node.Data.Text @rootLevel @parentLevel
+                </a>
+            </li>
+
+        }
+        parentLevel = 1;
+        rootLevel++;
+    }
+</ul>
+
+
+<script type="text/javascript">
+
+    $('#tree_@Model.TreeViewId li.parent').click(function () {
+
+        var root = parseInt($(this).attr('data-root'));
+        var level = parseInt($(this).attr('data-level'));
+        var action = 'expand';
+
+        if ($(this).hasClass('expanded-view')) {
+            action = 'collapse';
+        }
+        $(this).toggleClass('expanded-view');
+        $(this).find('span').toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-right');
+
+        $("#tree_@Model.TreeViewId li").each(function (idx, li) {
+            var product = $(li);
+
+            var liRoot = parseInt($(this).attr('data-root'));
+            var liLevel = parseInt($(this).attr('data-level'));
+
+            if (action == 'expand') {
+                // shows selected level
+                if (root == liRoot && liLevel == (level + 1)) {
+                    $(this).removeClass('hide');
+                }
+
+            }
+            else
+            {
+                // hides selected level and all children
+                if (liRoot == root && liLevel >= (level + 1)) {
+                    $(this).addClass('hide');
+                    $(this).removeClass('expanded-view');
+
+                    if ($(this).find('span').hasClass('glyphicon-chevron-down'))
+                    {
+                        $(this).find('span').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
+                    }
+                }
+            }
+
+        });
+
+    
+    });
+
+</script>
