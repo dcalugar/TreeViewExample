@@ -8,3 +8,4 @@ c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\ne
 c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.AssemblyInfo.cs
 c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.dll
 c:\users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.pdb
+C:\Users\david.calugar\source\repos\TreeViewExample\TreeViewExample\obj\Debug\netcoreapp2.0\TreeViewExample.csprojResolveAssemblyReference.cache

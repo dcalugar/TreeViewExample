@@ -13,18 +13,19 @@
 
         @foreach (var node in rootNode)
         {
-            if (dataText == "")
-            {
-                dataText = node.Parent == null ? "" : node.Parent.Data.DataText;
-            }
-            else if (node.Parent != null && dataText != node.Parent.Data.DataText)
+            //if (dataText == "")
+            //{
+            //    dataText = node.Parent == null ? "" : node.Parent.Data.DataText;
+            //}
+            //else 
+            if (node.Parent != null && dataText != node.Parent.Data.DataText)
             {
                 parentLevel++;
                 dataText = node.Parent.Data.DataText;
             }
 
             <li class="indent-level-@node.Level @(node.IsRoot ? "" : "hide") @(node.Children.Count > 0 ? "parent" : "") tree-view" data-root="@rootLevel" data-level="@parentLevel">
-                <a href="javascript:;" data-root="@rootLevel" data-level="@parentLevel">
+                <a href="javascript:;">
                     @if (node.Children.Count > 0)
                     {
                         <span class="glyphicon glyphicon-chevron-right"></span>
@@ -47,6 +48,8 @@
         var root = parseInt($(this).attr('data-root'));
         var level = parseInt($(this).attr('data-level'));
         var action = 'expand';
+
+        console.log(root + ' ' + level);
 
         if ($(this).hasClass('expanded-view')) {
             action = 'collapse';

@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\TreeViewExample.csproj",
+      "projectUniqueName": "C:\\Users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\TreeViewExample.csproj",
       "projectName": "TreeViewExample",
-      "projectPath": "c:\\users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\TreeViewExample.csproj",
+      "projectPath": "C:\\Users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\TreeViewExample.csproj",
       "packagesPath": "C:\\Users\\david.calugar\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\obj\\",
+      "outputPath": "C:\\Users\\david.calugar\\source\\repos\\TreeViewExample\\TreeViewExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
